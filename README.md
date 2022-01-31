@@ -1,4 +1,4 @@
-# homebrew-tools
+# homebrew-tools :beer:
 
 Homebrew tap formula(s) for Dream11 internal tools.
 
