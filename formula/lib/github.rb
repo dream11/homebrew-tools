@@ -116,10 +116,6 @@ class GitHubPrivateRepositoryReleaseDownloadStrategy < GitHubPrivateRepositoryDo
             GitHubPrivateRepositoryDownloadStrategy
           when :github_private_release
             GitHubPrivateRepositoryReleaseDownloadStrategy
-          when :s3
-            S3DownloadStrategy
-          when :scp
-            ScpDownloadStrategy
           else
             super(symbol)
           end
