@@ -8,14 +8,14 @@ class Odin < Formula
 
   # For MacOs Intel based systems
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/dream11/odin/releases/download/1.0.0-beta/odin_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "21dda131748c97ff5317faed37c25c65279c7ba741b73ebc3559db3471ffdea7"
+    url "https://github.com/dream11/odin/releases/download/1.0.0-alpha/odin_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "dc97ee87cf3880161464f410de0089ca7db622a848a074de1ef6a6d5b2d83fb4"
   end
 
   # For MacOs M1 based systems
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/dream11/odin/releases/download/1.0.0-beta/odin_darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "<sha256 of odin_darwin_arm64.tar.gz>"
+    url "https://github.com/dream11/odin/releases/download/1.0.0-alpha/odin_darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "5649de96620b62fb3b59c9ce679eedf6ac3b5eeaa0be97deb7c8c105f02ac664"
   end
 
   conflicts_with "odin"
