@@ -4,7 +4,7 @@ require_relative "lib/github"
 class Odin < Formula
   desc "Internal framework CLI for CRUD operations with environments"
   homepage "https://github.com/dream11/odin"
-  version "1.0.0-beta"
+  version "1.0.0-alpha"
 
   # For MacOs Intel based systems
   if OS.mac? && Hardware::CPU.intel?
