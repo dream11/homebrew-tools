@@ -1,7 +1,7 @@
 # typed: false
 require_relative "lib/github"
 
-class Odin < Formula
+class OdinAT100Alpha < Formula
   desc "Internal framework CLI for CRUD operations with environments"
   homepage "https://github.com/dream11/odin"
   version "1.0.0-alpha"

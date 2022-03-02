@@ -114,6 +114,20 @@ class Tool < Formula
 end
 ```
 
+#### Formula Version
+
+To enable `brew install tool@version`. Write the formula as stated [here](#formula-1), just change the class name according to the convention and place it in the file named as `homebrew-tools/formula/tool@<version>.rb`.
+
+Example - [odin.rb](./formula/odin.rb) v/s [odin@1.0.0-alpha.rb](./formula/odin@1.0.0-alpha.rb)
+
+#### Class naming convention
+
+1. For `tool`, class name becomes `Tool`
+
+2. For `tool@version`, class name becomes `ToolAt<Version>`
+  a. version 1.0.0 gives - `ToolAt100`
+  b. version 1.0.0-beta gives - `ToolAt100Beta`
+
 #### Installation
 
 ```shell
