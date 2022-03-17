@@ -4,24 +4,24 @@ require_relative "lib/github"
 class Odin < Formula
   desc "Internal framework CLI for CRUD operations with environments"
   homepage "https://github.com/dream11/odin"
-  version "1.0.0-alpha"
+  version "1.0.1-alpha"
 
   # For MacOs Intel based systems
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/dream11/odin/releases/download/1.0.0-alpha/odin_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "ba833d556af4a47923fcb8780ca31492369808eea2165c733f5b5fd25c3885a7"
+    url "https://github.com/dream11/odin/releases/download/1.0.1-alpha/odin_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "35ef78f18974a02afbb96fef251ba1de5fb07920fa2864267f95168cd28d3c40"
   end
 
   # For MacOs M1 based systems
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/dream11/odin/releases/download/1.0.0-alpha/odin_darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "4c5d45c7ad41cd217aa9f1bc906b921161a2554cb3e5084f3188ffd347ccc7b9"
+    url "https://github.com/dream11/odin/releases/download/1.0.1-alpha/odin_darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "7e83a133f455ca325c044dd5c91bec872eef0392da1e02fac45646630f25f9be"
   end
 
   # For Linux X64 based systems
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/dream11/odin/releases/download/1.0.0-alpha/odin_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "801e95a44248765a1afdab0d650321f286cd6bf506c88ae571db3d0624dac37e"
+    url "https://github.com/dream11/odin/releases/download/1.0.1-alpha/odin_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "2060529afb90e7006937c957d27d1b7fd5e47ddb8fa89d71462e9e4aa68814cb"
   end
   
   def install
