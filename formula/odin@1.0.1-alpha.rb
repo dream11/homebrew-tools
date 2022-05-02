@@ -1,5 +1,4 @@
 # typed: false
-require_relative "lib/github"
 
 class OdinAT101Alpha < Formula
   desc "Internal framework CLI for CRUD operations with environments"
