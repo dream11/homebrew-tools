@@ -133,7 +133,7 @@ class Tool < Formula
 
   # For MacOs Intel based systems
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/dream11/tool/releases/download/1.0.0/tool_darwin_amd64.tar.gz", :using GitHubPrivateRepositoryReleaseDownloadStrategy
+    url "https://github.com/dream11/tool/releases/download/1.0.0/tool_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
     sha256 "<sha256 of tool_darwin_amd64.tar.gz>"
   end
 
