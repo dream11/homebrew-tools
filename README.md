@@ -1,13 +1,10 @@
 # homebrew-tools :beer:
 
-Homebrew tap formula(s) for Dream11 internal tools.
+Homebrew tap formula(s) for Dream11 tools.
 
 ## Tap
 
 ```shell
-# Github API Token is required to fetch private github repositories
-export HOMEBREW_GITHUB_API_TOKEN=<your github access token>
-
 brew tap dream11/tools
 ```
 
@@ -16,6 +13,8 @@ brew tap dream11/tools
 ```shell
 brew install dream11/tools/<formula name>
 ```
+
+> Can run directly without running `brew tap`.
 
 Example
 
@@ -80,6 +79,49 @@ For a repository `github.com/dream11/tool` -
 
 Create a formula, `homebrew-tools/formula/tool.rb`,
 
+If repository is public,
+
+```ruby
+# typed: false
+
+class Tool < Formula
+  desc "Tool description"
+  homepage "https://github.com/dream11/tool"
+  version "1.0.0"
+
+  # For MacOs Intel based systems
+  if OS.mac? && Hardware::CPU.intel?
+    url "https://github.com/dream11/tool/releases/download/1.0.0/tool_darwin_amd64.tar.gz"
+    sha256 "<sha256 of tool_darwin_amd64.tar.gz>"
+  end
+
+  # For MacOs M1 based systems
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/dream11/tool/releases/download/1.0.0/tool_darwin_arm64.tar.gz"
+    sha256 "<sha256 of tool_darwin_arm64.tar.gz>"
+  end
+
+  conflicts_with "tool"
+
+  def install
+    bin.install "tool"
+  end
+
+  test do
+    system "#{bin}/tool --version"
+  end
+
+end
+```
+
+Install by running,
+
+```shell
+brew install dream11/tools/<tool>
+```
+
+If repository is private,
+
 ```ruby
 # typed: false
 require_relative "lib/github"
@@ -102,7 +144,7 @@ class Tool < Formula
   end
 
   conflicts_with "tool"
-  
+
   def install
     bin.install "tool"
   end
@@ -112,6 +154,15 @@ class Tool < Formula
   end
 
 end
+```
+
+Install by running,
+
+```shell
+# A github personal access token will be required to access the private repository
+export HOMEBREW_GITHUB_API_TOKEN=<Github API token>
+
+brew install dream11/tools/<tool>
 ```
 
 #### Formula Version
