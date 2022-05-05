@@ -1,7 +1,7 @@
 # typed: false
 
 class OdinAT101Alpha < Formula
-  desc "Internal framework CLI for CRUD operations with environments"
+  desc "Interface for service definitions & deployments into self-managed environments"
   homepage "https://github.com/dream11/odin"
   version "1.0.1-alpha"
 
