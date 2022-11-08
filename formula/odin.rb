@@ -3,24 +3,24 @@
 class Odin < Formula
   desc "Interface for service definitions & deployments into self-managed environments"
   homepage "https://github.com/dream11/odin"
-  version "1.2.0-beta.3"
-  
+  version "1.2.0"
+
   # For MacOs Intel based systems
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/dream11/odin/releases/download/1.2.0-beta.3/odin_darwin_amd64.tar.gz"
-    sha256 "9f8f80c640cbccfb4e2a4883b5001640860d3417c35ccbae90d1091db3e764ca"
+    url "https://github.com/dream11/odin/releases/download/1.2.0/odin_darwin_amd64.tar.gz"
+    sha256 "92d237e0fa5b9683747c912ae7fe518bf0ce68a75dbf110efbfd4d21d1cc83f8"
   end
 
   # For MacOs M1 based systems
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/dream11/odin/releases/download/1.2.0-beta.3/odin_darwin_arm64.tar.gz"
-    sha256 "bdb632aa6958a9ba182719d80b5cdd6a900d6e916679e7af44c34a7c13eb44b3"
+    url "https://github.com/dream11/odin/releases/download/1.2.0/odin_darwin_arm64.tar.gz"
+    sha256 "1b31a3c3a5e84086313e5c9b9071703717ff6d251fe153b830b6dad597078d4c"
   end
 
   # For Linux X64 based systems
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/dream11/odin/releases/download/1.2.0-beta.3/odin_linux_amd64.tar.gz"
-    sha256 "680d2ad36c51ba0e71eedc6cdb0dfbee574424e51b1c0aa054a0066b1aef761d"
+    url "https://github.com/dream11/odin/releases/download/1.2.0/odin_linux_amd64.tar.gz"
+    sha256 "efe20674835554adea4eb42187fbcd39ccc2ff6619ce8bf3ad2fa123d4d90631"
   end
 
   def install
