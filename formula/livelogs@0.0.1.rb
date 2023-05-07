@@ -1,6 +1,6 @@
 # typed: false
 
-class Livelogs < Formula
+class LivelogsAT001 < Formula
   desc "Interface for service definitions & deployments into self-managed environments"
   homepage "https://github.com/dream11/livelogs"
   version "0.0.1"
