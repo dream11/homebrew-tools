@@ -1,7 +1,8 @@
 # typed: false
+require_relative "lib/github"
 
 class Livelogs < Formula
-  desc "Interface for service definitions & deployments into self-managed environments"
+  desc "Interface for service owners to check service logs for any environment"
   homepage "https://github.com/dream11/livelogs"
   version "0.0.1"
 
