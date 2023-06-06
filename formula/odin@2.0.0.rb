@@ -1,6 +1,6 @@
 # typed: false
 
-class Odin < Formula
+class OdinAT200 < Formula
   desc "Interface for service definitions & deployments into self-managed environments"
   homepage "https://github.com/dream11/odin"
   version "2.0.0"
