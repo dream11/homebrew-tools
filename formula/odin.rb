@@ -1,7 +1,7 @@
 # typed: false
 
 class Odin < Formula
-  desc "Interface for service definitions & deployments into self-managed environments"
+  desc "Interface for service definitions & deployments into self-managed environments."
   homepage "https://github.com/dream11/odin"
   version "2.0.0"
   # For MacOs Intel based systems
