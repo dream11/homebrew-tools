@@ -1,7 +1,7 @@
 # typed: false
 require_relative "lib/github"
 
-class Tool < Formula
+class Streamverse < Formula
   desc "Streamverse CLI tool"
   homepage "https://github.com/dream11/streamverse-cli"
   version "1.0.0"
