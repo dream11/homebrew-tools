@@ -1,7 +1,7 @@
 # typed: false
 require_relative "lib/github"
 
-class Streamverse < Formula
+class StreamsCli < Formula
   desc "Streams CLI"
   homepage "ttps://github.com/dream11/streams-cli"
   version "0.0.1-alpha"
