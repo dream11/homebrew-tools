@@ -9,8 +9,8 @@ class StreamsCliAT001Alpha < Formula
 
   # For MacOs M1 based systems
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/dream11/streams-cli/releases/download/0.0.1-alpha/streamverse_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "35729391bf3bcaba3b962f79a81c0105eda922f0ffbc7e921f1144b790a61e4b"
+    url "https://github.com/dream11/streams-cli/releases/download/0.0.1-alpha/streamverse_darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "b5640d47c20c6f8a576f6ed57f88c819f9d7de533d6aadf9348c8ef370f3d94e"
   end
 
 
