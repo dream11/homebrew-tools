@@ -1,4 +1,5 @@
 # typed: false
+require_relative "lib/github"
 
 class StreamsAT005Alpha < Formula
   desc "Streamverse - Streams cli"
