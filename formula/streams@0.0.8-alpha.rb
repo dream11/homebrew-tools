@@ -1,6 +1,6 @@
 # typed: false
 
-class Streams < Formula
+class StreamsAT008Alpha < Formula
   desc "Streams cli"
   homepage "https://github.com/dream11/streams-cli"
   version "0.0.8-alpha"
