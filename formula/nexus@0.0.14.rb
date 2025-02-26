@@ -1,13 +1,13 @@
 # typed: false
 require_relative "lib/github"
 
-class Nexus < Formula
+class NexusAT0014 < Formula
   desc "nexus cli"
   homepage "https://github.com/dream11/nexus-cli"
   version "0.0.14"
   # For MacOs Intel based systems
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/dream11/nexus-cli/releases/download/0.0.14/nexus_darwin_amd64.tar.gz" , :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    url "https://github.com/dream11/nexus-cli/releases/download/0.0.14/nexus_darwin_amd64.tar.gz" , :using => GitHubPrivateRepositoryReleaseDownloadStrategy 
     sha256 "1473cd080da6bd1120ae6c6acf477336b2fa84490f254aabdcfab33784508c93"
   end
   # For MacOs M1 based systems
