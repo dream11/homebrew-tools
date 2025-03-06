@@ -1,5 +1,4 @@
 # typed: false
-require_relative "lib/github"
 
 class Nexus < Formula
   desc "nexus cli"
@@ -7,18 +6,18 @@ class Nexus < Formula
   version "0.0.15"
   # For MacOs Intel based systems
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/dream11/nexus-cli/releases/download/0.0.15/nexus_darwin_amd64.tar.gz" , :using => GitHubPrivateRepositoryReleaseDownloadStrategy 
-    sha256 "c5c74c6e3a08d16bb285ec9e77fef2b642b1998be0d90ff791c856782ae40be5"
+    url "https://github.com/dream11/nexus-cli/releases/download/0.0.15/nexus_darwin_amd64.tar.gz"
+    sha256 "693f36cb465c95b904cfa8263ee0cb4287ce473a88f26b63dc62423eb6d3f889"
   end
   # For MacOs M1 based systems
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/dream11/nexus-cli/releases/download/0.0.15/nexus_darwin_arm64.tar.gz" , :using => GitHubPrivateRepositoryReleaseDownloadStrategy 
-    sha256 "efeb8ad008978de6c7799b6a4917f9fa29c94a0c902a4925e368c2bd98e88bb4"
+    url "https://github.com/dream11/nexus-cli/releases/download/0.0.15/nexus_darwin_arm64.tar.gz"
+    sha256 "16597fc0a0bfda3f6e97fcc6be1e54f4dbedfc429b18b4777ba4e1c1a30659ea"
   end
   # For Linux X64 based systems
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/dream11/nexus-cli/releases/download/0.0.15/nexus_linux_amd64.tar.gz" , :using => GitHubPrivateRepositoryReleaseDownloadStrategy 
-    sha256 "81b15e815ee3d5ff1397efcbed0622b0a28470ff8cc0ebdbe5249eb5bcf13517"
+    url "https://github.com/dream11/nexus-cli/releases/download/0.0.15/nexus_linux_amd64.tar.gz"
+    sha256 "1259884c67ae727547c402626b293a70bf2d099d233ce662e39ec5d0ed809851"
   end
 
   def install
