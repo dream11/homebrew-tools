@@ -1,27 +1,27 @@
 # typed: false
 require_relative "lib/github"
 
-class LivelogsAT001 < Formula
+class LivelogsAT022 < Formula
   desc "Interface for service owners to check service logs for any environment"
-  homepage "https://github.com/dream11/livelogs"
-  version "0.0.1"
+  homepage "https://github.com/dream-sports-labs/livelogs"
+  version "0.2.2"
 
   # For MacOs Intel based systems
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/dream11/livelogs/releases/download/0.0.1/livelogs_darwin_amd64.tar.gz"
-    sha256 "530491f4582d4e13bf574fe6a9cfae2ea4e1bd1a68682c4a6618404dbd37e729"
+    url "https://github.com/dream-sports-labs/livelogs/releases/download/0.2.2/livelogs_darwin_amd64.tar.gz"
+    sha256 "94d315742ff9b7307710d31230307dc1841ced7b2f71a44f4bb55dc4b0015e28"
   end
 
   # For MacOs M1 based systems
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/dream11/livelogs/releases/download/0.0.1/livelogs_darwin_arm64.tar.gz"
-    sha256 "9e838d22654da1be6f2a2bbc85dfd12c4720911e30659aab947f087ba2599994"
+    url "https://github.com/dream-sports-labs/livelogs/releases/download/0.2.2/livelogs_darwin_arm64.tar.gz"
+    sha256 "e824fb55660d9fe319898346ca937d84089052f0a976d4165b505fdba7636d9e"
   end
 
   # For Linux X64 based systems
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/dream11/livelogs/releases/download/0.0.1/livelogs_linux_amd64.tar.gz"
-    sha256 "7110e6f400adcf2fa8cf35819473a139b47626042f060aee9288c81bf14c9f08"
+    url "https://github.com/dream-sports-labs/livelogs/releases/download/0.2.2/livelogs_linux_amd64.tar.gz"
+    sha256 "1b3e8db1f8d409af0894fbc43d7aeb59652f0183c0499dc4cb2adca245656d0e"
   end
 
   def install
