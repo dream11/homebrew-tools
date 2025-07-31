@@ -1,7 +1,7 @@
 # typed: false
 require_relative "lib/github"
 
-class Livelogs < Formula
+class LivelogsAT024 < Formula
   desc "Interface for service owners to check service logs for any environment"
   homepage "https://github.com/dream-sports-labs/livelogs"
   version "0.2.4"
