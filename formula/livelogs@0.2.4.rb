@@ -1,5 +1,4 @@
 # typed: false
-require_relative "lib/github"
 
 class LivelogsAT024 < Formula
   desc "Interface for service owners to check service logs for any environment"
