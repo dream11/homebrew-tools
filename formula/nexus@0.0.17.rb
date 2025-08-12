@@ -1,6 +1,6 @@
 # typed: false
 
-class Nexus < Formula
+class NexusAT0017 < Formula
   desc "nexus cli"
   homepage "https://github.com/dream11/nexus-cli"
   version "0.0.17"
